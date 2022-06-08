@@ -1,0 +1,72 @@
+
+    <nav class="navbar navbar-expand-md navbar-dark  navbar-transparente mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+           <img src="/img/bolsa-de-dinheiro.png" width="50" height="35" alt="Orçamento pessoal">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+			<a class="nav-link" href="/timeline">
+	  		Home
+	  	</a>
+            </li>
+            <li class="nav-item">
+			<a class="nav-link" href="/sair">
+	  		Sair
+	  	</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col mb-5">
+          <h1 class="display-6">Registro de nova despesa</h1>
+        </div>
+        </div>
+
+      
+      <form method="post" action="/despesa">
+
+      <div class="row">
+        <div class="col-md-8">
+          <input type="text" name="despesa" class="form-control" placeholder="Descrição" id="descricao" />
+        </div>
+
+        <div class="col-md-2">
+          <input type="text"  name="valor" class="form-control" placeholder="Valor" id="valor" />
+        </div>
+						<div class="col mt-2 d-flex justify-content-end">
+							<button type="submit" class="btn btn-secondary">cadastrar</button>
+						</div>
+
+			</form>
+    
+   
+          <table class="table" >
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+
+    </div>
+  
+  
+
